@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/styles/styles.css">     
+<!-- Slider -->
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+  
+
+
+    <title>Ü Tuula</title>
+</head>
+<body>
+   
+   <!-- Section Home -->
+    <div id="home" class="home">
+        <nav class="navbar">
+            <div class="menu" id="menu">
+                <div class="menu__link"><a class="a_menu" href="#nosotras" id="nosotras-menu">Nosotras</a></div>
+                <div class="menu__link"><a class="a_menu" href="#productos" id="productos-menu">Productos</a></div>
+                <div class="toggle_menu" id="toggle_menu"><a href="#home"><img src="img/logo/Logo-white.svg"> </a></div>
+                <div class="menu__link"><a class="a_menu" href="#clientes" id="clientes-menu">Clientes</a></div>
+                <div class="menu__link"><a class="a_menu" href="#contacto" id="contacto-menu">Contacto</a></div>
+            </div>
+        </nav>
+
+        <script>
+            function bar (){
+                document.getElementById("nosotras-menu").classList.toggle ("selected");
+            }
+            document.getElementById("nosotras-menu").onclick = function (){
+                bar();
+            }
+        </script>
+
+        <div class="hero">
+            <img class="hero__img" src="/img/photos/photo-home.jpg">
+            <div class="hero__text">
+                <h2 class="hero__text__h2">Personalmente<br>Personalizado</h2>
+                <p class="hero__text__p">Diseñamos, estampamos y confeccionamos todo lo que se te pase por la mente</p>
+                <div class="hero__text__buttons">
+                    <div class="button">Productos</div>
+                    <div class="button ghost-button">Clientes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Nosotras -->
+
+    <div id="nosotras" class="section-nosotras">
+        <div class="nosotras-container">
+            
+            <img class="nosotras-container__img" src="/img/photos/photo-nosotras.jpg">
+
+            <img class="nosotras-container__img--small" src="/img/photos/photo-nosotras-small.jpg">
+          
+            <div class="nosotras-container__text">Hola! Somos Aure y Maca!
+                Creadoras de Tuula, y queremos
+                 ayudarte a crear la prenda que quieras
+                llevar en tu cuerpo, con todos
+                los recursos visuales que te
+                representen.<br><br>
+                <span class="text-green">Ambas estamos abocadas a cada
+                dia mejorar estrategias de
+                comunicacion y produccion para
+                que tu experiencia sea “placentera”,
+                tratando de ser lo mas comunicativas
+                posibles en todo el proceso, y poder
+                llegar a la entrega de los productos
+                en el tiempo pactado.</span></div>
+
+            <div class="nosotras-container__profile">
+                <div class="nosotras-container__profile--description">
+                    <img src="/img/photos/avatar1.png">
+                    <text>
+                        <h2>AURE</h2>
+                        <p>Soy con la primera que te vas a
+                            contactar,me vas a contar tus ideas
+                            y necesidades, vamos a diseñar tu
+                            prenda en conjunto, hasta poder
+                            llegar a lo que tenias en mente.
+                            Una vez cerrado el diseño
+                            entra en produccion. </p>
+                    </text>
+                </div>
+
+                <div class="nosotras-container__profile--description">
+                <img src="img/photos/avatar2.png">
+                <text>
+                    <h2>MACA</h2>
+                    <p>Soy la que se va a encargar de
+                        que tu diseño se materialice, en
+                        estampa, en corte y en confeccion,
+                        y una vez listo el pedido me voy
+                        a comunicar con vos para
+                        realizar la entrega.</p>
+                </text>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!--  Section Productos -->
+
+    <div id="productos" class="productos">
+        
+        <div class="products__images">
+            <!-- <img src="/img/photos/foto-groups.jpg" class="products__images__img--group"> -->
+            <img src="/img/photos/product 1.jpg" alt="" class="photo1">
+            <img src="/img/photos/product 2.jpg" alt="" class="photo2">
+            <img src="/img/photos/product 3.jpg" alt="" class="photo3">
+            <img src="/img/photos/product 4.jpg" alt="" class="photo4">
+            <img src="/img/photos/product 5.jpg" alt="" class="photo5">
+            <img src="/img/photos/product 6.jpg" alt="" class="photo6">
+            <img src="/img/photos/product 7.jpg" alt="" class="photo7">
+        </div>
+
+        <div class="products__text">
+            <div class="productos__text__header">
+                Accede a todos nuestros productos en detalle!</div>
+            <div class="productos__text__buttons button">Mas detalles</div>
+        </div>
+    </div>
+
+    <!-- Section Clientes  -->
+
+    <div id="clientes" class="clientes">
+        <div class="clientes__container">
+            <p class="clientes__p">Tenemos una amplia variedad de clientes que desafían la creatividad día a día y quedaron satisfechos con el producto final.<br>
+                <span class="clientes__p-span">Vos te animás?</span></p>
+
+            <div class="clientes__testimonials">
+                
+                <div class="swiper mySwiper">
+                    <div class="container__slider swiper-wrapper">
+                        
+                        <div class="container__slider__1 swiper-slide">
+                            <header>
+                                <img alt="" src="/img/icons/stars.png">
+                                <h3 class="testimonial-ranking">5/5</h3>
+                            </header>
+                            <p><img class="high_quote" src="/img/icons/quote-left-solid.svg"></img> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt. <img class="high_quote" src="/img/icons/quote-right-solid.svg"></p>
+                            <footer class="">
+                                <img alt="" src="/img/photos/juana-perez.png">
+                                <div class="names">
+                                    <h3>Juana Perez</h3>
+                                    <h4>Grupo MTD</h4>
+                                </div>
+                            </footer>
+                        </div>
+
+                        <div class="container__slider__1 swiper-slide">
+                            <header>
+                                <img alt="" src="/img/icons/stars.png">
+                                <h3 class="testimonial-ranking">5/5</h3>
+                            </header>
+                            <p><img class="high_quote" src="/img/icons/quote-left-solid.svg"></img> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt. <img class="high_quote" src="/img/icons/quote-right-solid.svg"></p>
+                            <footer class="">
+                                <img alt="" src="/img/photos/juana-perez.png">
+                                <div class="names">
+                                    <h3>Juana Perez</h3>
+                                    <h4>Grupo MTD</h4>
+                                </div>
+                            </footer>
+                        </div>
+
+                        <div class="container__slider__1 swiper-slide">
+                            <header>
+                                <img alt="" src="/img/icons/stars.png">
+                                <h3 class="testimonial-ranking">5/5</h3>
+                            </header>
+                            <p><img class="high_quote" src="/img/icons/quote-left-solid.svg"></img> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt. <img class="high_quote" src="/img/icons/quote-right-solid.svg"></p>
+                            <footer class="">
+                                <img alt="" src="/img/photos/juana-perez.png">
+                                <div class="names">
+                                    <h3>Juana Perez</h3>
+                                    <h4>Grupo MTD</h4>
+                                </div>
+                            </footer>
+                        </div>
+                        
+                    </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                        
+                </div>
+
+                    <!-- Swiper JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+                    <!-- Initialize Swiper -->
+                    <script>
+                        const progressCircle = document.querySelector(".autoplay-progress svg");
+                        const progressContent = document.querySelector(".autoplay-progress span");
+                        var swiper = new Swiper(".mySwiper", {
+                          spaceBetween: 30,
+                          centeredSlides: true,
+                          autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false
+                          },
+                          pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true
+                          },
+                          navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev"
+                          },
+                          on: {
+                            autoplayTimeLeft(s, time, progress) {
+                              progressCircle.style.setProperty("--progress", 1 - progress);
+                              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                            }
+                          }
+                        });
+                      </script>
+                </div>
+
+                <div class="clientes__fotos">
+                    <img alt="" src="/img/photos/photos-clients.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Contacto -->
+
+    <div id="contacto" class="contacto">
+
+        <div class="form_container">
+            <h2 class="form_title">Ponete en contacto!</h2>
+            <form class="form" action="" method="POST">
+                <div class="form-name">Nombre</div>
+                <input type="text" id="name" class="form_input" placeholder="Nombre" name="name">
+                <div class="form-name">E-mail</div>
+                <input type="email" id="name" class="form_input" placeholder="E-mail" name="email">
+                <div class="form-name">Escribinos tu mensaje</div>
+                <textarea class="form_input form_input--message" placeholder="Mensaje" name="message"></textarea>
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
