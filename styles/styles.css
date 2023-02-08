@@ -101,14 +101,20 @@ body {
 }
 
 .button {
+    font-family: var(--Quicksand);
     padding: 0.6rem 1rem;
     border-radius: 4px;
     color: #000000;
-    background-color: #FCFF00;
+    background-color: rgb(251, 255, 0);
     font-weight: 600;
     font-size: 0.8rem;
     margin: 1rem;
     width: 7rem;
+}
+
+.button > a {
+    text-decoration: none;
+    color:#000000;
 }
 
 .button:hover {
@@ -437,22 +443,26 @@ body {
 }
 
 .form_input{
+    font-family: var(--Quicksand);
     display: flex;
     min-width: 95%;
     padding: 0 0.5rem;
     margin: 0 0.5rem;
     min-height:1.8rem;
-    background-color: rgba(252, 252, 252, 0.25);
-    color: black;
 }
 
 .form_input::placeholder {
-    color: rgb(217, 217, 217, 0.75);
+    color: rgba(115, 115, 115, 0.75);
+    font-family: var(--Quicksand);
+    padding-top: 1px;
 }
 
 .form_input--message {
     height: 11rem;
     margin-bottom: 1rem;
+    padding-top: 6px;
+    resize: vertical;
+    text-align: start;
 }
 
 
