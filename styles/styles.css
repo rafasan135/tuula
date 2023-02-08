@@ -403,7 +403,7 @@ body {
     display: grid;
     width: 35%;
     grid-template-rows: repeat(8, auto);
-    background: rgba(0, 0, 0, 0.5);
+    background: #B5D5D4;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
     margin: 5rem auto 2rem;
     justify-content: center;
@@ -437,7 +437,8 @@ body {
 }
 
 .form_input{
-    width: 95%;
+    display: flex;
+    min-width: 95%;
     padding: 0 0.5rem;
     margin: 0 0.5rem;
     min-height:1.8rem;
