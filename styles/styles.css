@@ -27,12 +27,21 @@ body {
     background-color: #ffffff;
     box-shadow: 10px 5px 5px rgb(255, 255, 255);
     z-index: 1000;
+    border: 1px solid red;
 }
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.logo__menu--small {
+    display: none;
+}
+
+.toggle__menu {
+    display: none;
 }
 
 .menu__link > a {
@@ -193,7 +202,13 @@ body {
     justify-content: center;
 }
 
-.products__images {
+.products__images__img--group {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .products__images {
     display: grid;
     padding: 0 2rem;
     grid-auto-rows: 80px;
@@ -207,11 +222,10 @@ body {
     "photo1 photo1 photo1 photo3 photo3 photo7 photo7"
 }
 
-
-
 .photo1{
     grid-area: photo1;
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -225,12 +239,14 @@ body {
 .photo3 {
     grid-area: photo3;
     height:100%;
+    width: 100%;
     object-fit: cover;
 }
 
 .photo4 {
     grid-area: photo4;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -252,7 +268,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-} 
+}  */
 
 .products__text {
     display: flex;
@@ -502,6 +518,18 @@ body {
 
     }
 
+    .nosotras-container__profile--description {
+        background-color: #FDFF82;
+        border-radius: 15px;
+        margin: 2rem;
+    }
+
+    .nosotras-container__profile--description > img {
+        background-color: #FDFF82;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
     .nosotras-container__profile{
         padding: 0;
         grid-column: 1 / span 2;
@@ -510,4 +538,152 @@ body {
     .products__text {
         padding-right: 1rem;
     }
+}
+
+@media (max-width: 768px) {
+    
+    /* menu */
+    .toggle__menu {
+        display:flex;
+        flex-direction: row-reverse;
+        z-index: 100;
+    }
+
+    .logo__menu--small {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: flex;
+        position: absolute;
+        top:0;
+        right: 0;
+        margin: 0;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #333333;
+        font-size: 2rem;
+        transition: 500ms;
+        padding: 50px;
+        transform:translateX(130%);
+        opacity: 0.92;
+    }
+
+    .menu__link {
+    }
+
+    .menu--show {
+        transform:translateX(0%);
+        width: 100vw;
+    } 
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+    }
+
+    /* Nosotras */
+
+    .nosotras-container {
+        display: grid;
+        grid-template-areas:
+        'header'
+        'img'
+        'paragraph'
+        'profile1'
+        'profile2';
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+
+    .nosotras-container__profile {
+        grid-area: paragraph;
+        padding: 0 1rem;
+    }
+
+    .nosotras-container__img--small {
+        grid-area: header;
+        justify-self: center;
+        padding: 0;
+        border-radius: 15px;
+    }
+
+    .nosotras-container__profile--description {
+        background-color: #FDFF82;
+        border-radius: 15px;
+        margin: 2rem;
+    }
+
+    .nosotras-container__profile--description > img {
+        background-color: #FDFF82;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+
+    .nosotras-container__text {
+        grid-area: img;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+
+    /* Productos */
+
+    .productos__text__header {
+        display: flex;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        justify-content:flex-start;
+    }
+
+    /* Clientes */
+
+    .clientes__container {
+        width: 100vw;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+    }
+
+    /* Contacto */
+
+    .form_container {
+        width: 70vw;
+    };
+}
+
+@media (max-width: 530px) {
+    .nosotras-container__profile--description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+    }
+   
+
+    .nosotras-container__profile--description > text {
+        justify-content:flex-start;
+        padding: 1rem;
+    }
+
+    .nosotras-container__profile--description > text > h2 {
+        padding-bottom: 1rem;
+
+    }
+
+     /* Contacto */
+
+     .form_container {
+        width: 80vw;
+    };
+
 }
