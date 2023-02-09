@@ -27,7 +27,6 @@ body {
     background-color: #ffffff;
     box-shadow: 10px 5px 5px rgb(255, 255, 255);
     z-index: 1000;
-    border: 1px solid red;
 }
 
 .menu {
@@ -75,8 +74,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 11rem 2rem 0;
-    margin: auto;
+    padding: 9rem 2rem 2rem;
+    margin: auto auto 2rem;
+    min-height: 100vh;
 }
 
 .hero__img {
@@ -424,6 +424,7 @@ body {
 .form_container {
     display: grid;
     width: 35%;
+    min-width: 300px;
     grid-template-rows: repeat(8, auto);
     background: #B5D5D4;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -494,10 +495,6 @@ body {
 }
 
 @media (max-width: 950px) {
-
-    .section-nosotras {
-    }
-
     .nosotras-container {
         display: grid;
         margin: 0 auto;
@@ -512,10 +509,6 @@ body {
     .nosotras-container__img--small {
         display: flex;
         padding-right: 1rem;
-    }
-    
-    .nosotras-container__text {
-
     }
 
     .nosotras-container__profile--description {
@@ -591,6 +584,11 @@ body {
         flex-direction: column;
     }
 
+    .hero__img {
+        width: 55%;
+        padding-bottom: 2rem;
+    }
+
     /* Nosotras */
 
     .nosotras-container {
@@ -657,11 +655,18 @@ body {
     /* Contacto */
 
     .form_container {
-        width: 70vw;
+        width: 50vw;
     };
 }
 
 @media (max-width: 530px) {
+
+    /* Hero */
+    .hero__img {
+        width: 70%;
+    }
+    
+    /* Nosotras */
     .nosotras-container__profile--description {
         display: flex;
         flex-direction: column;
@@ -685,5 +690,4 @@ body {
      .form_container {
         width: 80vw;
     };
-
 }
